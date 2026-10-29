@@ -1,0 +1,50 @@
+[
+  {
+    "name": "get_summary",
+    "description": "PDBe (Protein Data Bank in Europe, EBI): get a PDB entry summary — title, experimental method, release date, source organism, and entity counts (polypeptide/ligand/water/...). Keyless. The EBI counterpart to RCSB PDB. Pass a 4-char PDB id like \"1cbs\".",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "pdb_id": {
+          "type": "string",
+          "description": "A 4-char PDB id, e.g. \"1cbs\"."
+        }
+      },
+      "required": [
+        "pdb_id"
+      ]
+    }
+  },
+  {
+    "name": "get_molecules",
+    "description": "PDBe (EBI): list the molecules/entities in a PDB structure — proteins, nucleic acids, and ligands, each with entity_id, molecule_type, name, and chain length. Keyless. Pass a 4-char PDB id like \"1cbs\".",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "pdb_id": {
+          "type": "string",
+          "description": "A 4-char PDB id, e.g. \"1cbs\"."
+        }
+      },
+      "required": [
+        "pdb_id"
+      ]
+    }
+  },
+  {
+    "name": "uniprot_mappings",
+    "description": "PDBe (EBI): SIFTS cross-database mapping of a PDB structure to UniProt — for each UniProt accession, the matching chains and residue range. Curated cross-database mappings unique to EBI. Keyless. Pass a 4-char PDB id like \"1cbs\".",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "pdb_id": {
+          "type": "string",
+          "description": "A 4-char PDB id, e.g. \"1cbs\"."
+        }
+      },
+      "required": [
+        "pdb_id"
+      ]
+    }
+  }
+]
