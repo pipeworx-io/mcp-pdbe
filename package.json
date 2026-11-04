@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-pdbe",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "PDBe (Protein Data Bank in Europe, EBI) MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "pdbe",
     "gatewaySlug": "pdbe",
-    "sourceHash": "v1-0a05e70dd373bdadcf6758d707b447b21413820663db470dbb82af2d4a6b91f0",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-85026371f733dd05956a0b07c517aa0485ecac5bcaba658f98d16fec4fcb85e6",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
